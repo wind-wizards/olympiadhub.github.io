@@ -1,0 +1,32 @@
+<div *ngFor="let options of respOptions" [ngClass]="options.viewClasses" class="flex-column vw-90 mx-auto">
+    <h1 [ngClass]="options.titleClasses" class="mb-5 text-center"><span class="fw-bold d-inline">Olympiads</span> <div class="text-muted d-inline"> Blog</div> </h1>
+
+    <div *ngIf="links$ | async as links">
+        <virtual-scroller [childHeight]='300' style="width: 100%; height: auto;" [parentScroll]="scroll.window" #scroll [items]="links">
+            <div class="row row-cols-1" #container>    
+                <div *ngFor="let page of scroll.viewPortItems"  class="col mb-4">
+                    <a [routerLink]="page.route" style="text-decoration: none; color: white;">
+                        <div class="card border-light bg-transparent">   
+                            <div class="row no-gutters">
+                                <div class="col-sm-3">
+                                    <img [src]="page['thumbnail'] ? page['date'] : '../../../assets/images/shhh.PNG'"  style="max-height: auto;" class="w-100 card-img" alt="...">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="card-body d-flex flex-column h-100">
+                                        <h5 class="card-title text-left" [title]="page.title">{{page.title}}</h5>
+                                        <p class="card-text text-left">{{page['description']}}</p>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-light text-muted text-center">
+                                    From: {{page['date']}}
+                            </div>
+                                
+                        </div>
+                    </a>                
+                </div>
+                <div class="text-center" *ngIf="loading"> Loading ...</div>
+            </div>
+        </virtual-scroller> 
+    </div>
+</div>

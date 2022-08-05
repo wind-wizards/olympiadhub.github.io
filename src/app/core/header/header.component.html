@@ -1,0 +1,32 @@
+<nav class="shadow-lg navbar navbar-expand-lg navbar-dark" style="background-color: #2a2a2a;">
+    <div class="container-fluid" >
+       <div *ngIf="bio$ | async as bio" routerLink="/">
+           <a class="navbar-brand mr-auto mr-lg-0" href="/">
+                <img class="p-2 d-inline" src="" alt="" width="30" height="24">
+                <p class="fw-bold d-inline">Science</p>
+                <p class="fw-light d-inline">Hub</p>
+            </a>
+        </div> 
+        <button class="navbar-toggler p-0 border-0 float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li  *ngFor="let item of menuItems" class="nav-item">
+                    <!-- <a class="nav-link"> -->
+                        <a class=" me-2 mb-2 btn btn-outline-light fw-bold" routerLinkActive="active" [routerLink]="item.pagePath">
+                            {{item.title}}
+                        </a>
+               </li>   
+            </ul>
+        </div>
+        
+        <!-- <a *ngIf="!this.isLoggedIn" class="nav-link"> -->                       
+        <div class="float-end">
+            <a class="btn btn-outline-success fw-bold" style="color: white;"
+                routerLinkActive="active" [routerLink]="loginItem.pagePath">
+                {{loginItem.title}}
+            </a>
+        </div>
+    </div>
+</nav>

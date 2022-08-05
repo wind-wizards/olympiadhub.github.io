@@ -1,0 +1,21 @@
+.vw-20 {
+  width: 20vw;
+}
+
+a.card:hover{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175) ;
+}
+
+
+.project-card {
+  width: 290px;
+  height: 250px;
+}
+
+.paper-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+}
+

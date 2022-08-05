@@ -1,0 +1,4 @@
+.step-button[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,30 @@
+<virtual-scroller [childHeight]='350' (vsEnd)="fetchMore($event)" style="width: 90vw; height: auto;" [parentScroll]="scroll.window"   #scroll [items]="buffer">
+    <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4" #container>
+        <div *ngFor="let item of scroll.viewPortItems"  class="col mb-4">
+            <div class="card border-light bg-transparent h-100">
+                <img [src]="'../../../../assets/images/shhh.PNG'" alt="...">
+                
+                <div class="card-body">   
+                    <h5 class="card-title text-light fw-bold text-left" [title]="'Hello world'">
+                        Hello world
+                    </h5>
+                    
+                    <p class="card-text text-light text-left">
+                        {{item}}
+                    </p>
+                    
+                </div>
+                
+                <div class="card-footer text-light text-muted border-light text-center">
+                    From: 12/12/12
+                </div>
+                
+            </div>
+        </div>
+    </div> -->
+    <div *ngFor="let item of scroll.viewPortItems"  class="col mb-4">
+        <ng-container [item]="item" *ngComponentOutlet="dynamicComponent"></ng-container>
+    </div>
+
+    <div class="text-center" *ngIf="loading"> Loading ...</div>
+</virtual-scroller> 

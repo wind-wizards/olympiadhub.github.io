@@ -1,0 +1,26 @@
+<div class="flex-column align-items-center vw-90 mx-auto">
+    <img class="w-100"  src="../../../../assets/images/Olympic training.jfif">
+    <h1 class="mb-2 mt-5 text-center fw-bold">Community Papers</h1>
+    
+    <h3 class="align-self-left">
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasBdS" class="navbar-toggler">
+            <span class="display-1">🔍</span>
+        </button>
+        Discover and learn with problems, excercises, and theory from different Science Olympiads for all levels
+    </h3>
+
+    <app-side-drawer [categories]="categories"></app-side-drawer>
+
+    <div *ngIf="papers$ | async as papers">
+            <virtual-scroller [childHeight]='380' style="width: 100%; height: auto;" [parentScroll]="scroll.window"   #scroll [items]="papers">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4" #container>    
+      
+                    <div *ngFor="let paper of scroll.viewPortItems"  class="col mb-4">
+                        <app-papers  [item] = "paper"></app-papers>
+                    </div>
+            
+                <!-- <div class="text-center" *ngIf="loading"> Loading ...</div> -->
+                </div>
+            </virtual-scroller> 
+    </div>
+</div>

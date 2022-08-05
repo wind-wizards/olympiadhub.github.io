@@ -1,0 +1,127 @@
+    <div class="container vw-90">
+        <div class="accordion" id="accordionExample">
+                <div class="d-flex align-items-center position-relative justify-content-between mb-3">
+                    <div class="progress w-100 position-absolute">
+                    <div class="progress-bar bg-info" [style]="'width: ' + progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div style="z-index: 10;">
+                    <button class="btn btn-primary step-button rounded-circle text-center" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1
+                    </button>
+                </div>
+                <div style="z-index: 10;">
+                    <button class="btn btn-primary step-button text-center rounded-circle collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2
+                </button>
+                </div>
+                <div style="z-index: 10;">
+                    <button class="btn btn-primary step-button text-center rounded-circle collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3
+                </button>
+            </div>
+        </div>
+        
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="card bg-transparent">
+            <div class="card-body">
+                <h5 class="card-title text-light fw-bold text-left">Upload paper</h5>
+                <div class="input-group mt-3">
+                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn disabled rounded-pill btn-outline-primary float-start" >Return</button>
+                <button (click)="nextStep(1)" class="btn rounded-pill btn-outline-primary float-end" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Next</button>
+            </div>
+        </div>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="card bg-transparent">
+            <div class="card-body">
+                <h5 class="card-title text-light fw-bold text-left">Papers General Information</h5>
+                
+                <div class="input-group mt-3">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                    <input type="text" class="form-control" placeholder="Ipho Theoretical XXX" aria-label="Name" aria-describedby="basic-addon1">
+                </div>
+                
+                <hr class="w-90">
+                
+                    <div class="input-group">
+                        <label class="input-group-text" for="inputGroupSelect01">Subject</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected value="Physics">Physics</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Informatics">Informatics</option>
+                        </select>
+                        
+                        <span class="input-group-text" id="inputGroupSelect02">Level</span>
+                        <select class="form-select" id="inputGroupSelect02">
+                            <option selected value="International">International</option>
+                            <option value="National">National</option>
+                            <option value="Satatal">Statal</option>
+                            <option value="Regional">Regional</option>
+                          </select> 
+                        </div>
+
+                      
+                        <div class="input-group mt-3">
+                            <span class="input-group-text" id="basic-addon1">Sub Branches</span>
+                        <input type="text" class="form-control" placeholder="Electromagnetism, AmpersLaw, MirrorCharges" aria-label="Name" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="basic-addon1">Competition Name</span>
+                        <input type="text" class="form-control" placeholder="IPHO" aria-label="Name" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <hr class="w-90">
+                      
+                </div>
+                <div class="card-footer">
+                    <button (click)="nextStep(0)" class="btn rounded-pill btn-outline-primary float-start" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Return</button>
+                    <button (click)="nextStep(2)" class="btn rounded-pill btn-outline-primary float-end" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="card bg-transparent">
+                <div class="card-body">
+                    <form formControl='submitPaperForm' novalidate class="text-center border border-light p-5" (ngSubmit)='uploadPaper()'>
+
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="basic-addon1">Number of Problems</span>
+                        <input type="number" class="form-control"  placeholder="2" aria-label="Name" aria-describedby="basic-addon1">
+                        <button class="btn btn-success" type="button" (click)="addProblem()">Apply</button>
+                    </div>
+                    <hr>
+                    <div formArrayName="problems" *ngFor="let t of problems.controls; let i = index">
+                        <input formControlName='name' id="{{'name'+i}}" type="text" class="form-control mb-4" placeholder="Enter Name" />
+                        <input formControlName='keywords' id="{{'keywords'+i}}" type="text" class="form-control mb-4" placeholder="Enter description" />
+                        <input formControlName='description' id="{{'description' + i}}" type="number" class="form-control mb-4"
+                        placeholder="Enter description " />
+                    </div>
+                    
+                    
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button  (click)="nextStep(1)" class="btn rounded-pill btn-outline-primary float-start" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Return</button>
+                    <button class="btn disabled rounded-pill btn-outline-primary float-end">Next</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

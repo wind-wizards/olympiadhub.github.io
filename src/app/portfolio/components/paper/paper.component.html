@@ -1,0 +1,198 @@
+<div *ngIf="paper$ | async as paper" class="container vw-90 mt-5">
+
+    
+    
+    <h1  class="m-1 d-inline"><span class="fw-bold">{{paper.name}}</span>  </h1>
+    
+    <h5 [ngClass]="paper.stack.nameColor" class="card-subtitle mb-2 text-left badge rounded-pill">
+        <i [ngClass]="paper.stack.iconClasses"></i>
+        {{paper.stack.categories.subject}}
+    </h5>
+
+<div class="mt-2"></div>
+<!-- <h6 *ngFor="let sub of paper.stack.subBranch" class="d-inline">
+    <div class="bg-secondary mr-5 mb-2 text-left badge rounded-pill">
+        <i [ngClass]="paper.stack.iconClasses"></i>
+        {{sub}}
+    </div>
+</h6> -->
+
+
+<div class="container" >
+    <div class="mt-5 mb-1 row text-center">
+        <h3>Problems</h3>
+    </div>
+    
+    <div *ngIf="paper.problems.theoretical" class="mt-1 mb-5 row">
+         
+        <div class="col-3 align-self-center">
+           <h4> 📝 Theoretical </h4>
+        </div>
+        <div class="row w-100"></div>
+        <div class=" col-10">
+            <div *ngFor="let problem of paper.problems.theoretical" class="row mt-5 mb-5">
+                
+                <div class="col-8">
+                    {{problem.description}}
+                    <!-- <div class="d-block"> -->
+                        <h6 *ngFor="let branch of problem.subBranches" style="white-space:normal;" class="bg-secondary badge rounded-pill ">
+                                <!-- <i [ngClass]="paper.stack.iconClasses"></i> -->
+                                {{branch}}
+                        </h6>
+                        
+                    <!-- </div> -->
+                </div>
+                <div class="col-2 align-self-center">
+                    <a [routerLink]="[problem.links[0]]" class="me-2 d-sm-inline btn rounded-pill btn-outline-light">Problem</a>
+                    <!-- <div *ngIf="problem.links[1]"> -->
+                    <a [routerLink]="[problem.links[1]]" class="me-2 d-sm-inline mt-2 btn rounded-pill btn-outline-light">Solution</a>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div *ngIf="paper.problems.experimental" class="mt-5 mb-5 row">
+            <div class="col-3 align-self-center">
+                <h4>🧲 Experimental</h4>
+            </div>
+            <div class="row w-100"></div>
+            <div class="col-10">
+
+                <div *ngFor="let problem of paper.problems.experimental" class=" row mt-5 mb-5">
+                    
+                    <div class="col-8">
+                        {{problem.description}}
+                            <h6 *ngFor="let branch of problem.subBranches" class="bg-secondary badge rounded-pill">
+                                <!-- <i [ngClass]="paper.stack.iconClasses"></i> -->
+                                {{branch}}
+                            </h6>
+                            
+                    </div>
+                    <div class="col-2 align-self-center">
+                        
+                        <a [routerLink]="problem.links[0]" class="me-2 d-sm-inline btn rounded-pill btn-outline-light">Problem</a>
+                        <a [routerLink]="problem.links[1]" class="me-2 d-sm-inline mt-2 btn rounded-pill btn-outline-light">Solution</a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+    <div *ngIf="paper.statistics" class="row mt-5 mb-1 text-center">
+        <h3> 📊 Statistics</h3>
+    </div>
+    <div *ngIf="paper.statistics" class="mt-2 mb-1 row">
+        <div class="col-6 col-md-8">
+            <div class="row mb-5">
+                Final Cuts 
+            </div>
+            <div  class="row mt-5 mb-5">
+                {{paper.statistics.cuts.gold}} 
+            </div>
+            <div class="row mt-5 mb-5">
+                {{paper.statistics.cuts.silver}}
+            </div>
+            <div class="row mt-5 mb-5">
+                {{paper.statistics.cuts.bronze}}
+            </div>
+            <div class="row mt-5 mb-5">
+                {{paper.statistics.cuts.honorable}}
+            </div>
+        </div>
+        
+        <div class="col-3 col-md-2">
+            <div class="row">
+                Participants
+            </div>
+            
+            <div class="row mt-5 mb-5">
+                {{paper.statistics.participants}}
+            </div>
+        </div>
+           
+        <div class="col-3 col-md-2">
+            <div *ngIf="paper.statistics.topCountries" class="row mt-1 mb-5 d-block">
+                    Top Countries
+            </div>
+            <div *ngFor="let country of paper.statistics.topCountries" class="d-inline">
+                    {{country}},
+            </div>
+        </div>
+
+    </div>
+    <div  *ngIf="paper.information" class="mt-5 mb-1 row text-center">
+        <h3> References and Information </h3> 
+    </div>
+
+    <div *ngIf="paper.information" class="mt-2 mb-1 row">
+        <div class="col-2 align-self-top">
+            <div class="row fw-bold">
+                Host Country
+            </div>
+            <div class="row mt-5">
+                {{paper.information.host}}
+            </div>
+        </div>
+        <div class="col-2">
+                <div class="row mt-1 mb-5 fw-bold">
+                    📡 Oficial WebSite
+                </div>
+                <div class="row mt-5 mb-5">
+                    <a [routerLink]="paper.information.website"> {{paper.information.website}}</a>
+                </div>
+            </div>
+        <div class="col-4">
+                <div class="row mt-1 mb-2 fw-bold">
+                    🎆 Celebrated on
+                </div>
+                <div class="row mt-1 mb-5">
+                    {{paper.information.date}}
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row mt-1 mb-1 fw-bold">
+                    💼 Directing Commitee
+                </div>
+                <div *ngFor="let member of paper.information.commitee" class="mt-1 mb-5 d-inline">
+                    {{member}},
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 
+
+<div class="card h-100">
+    <img src="..." class="card-img-top" alt="...">
+    
+    <div class="card-body">   
+        <h5 class="card-title fw-bold text-left" [title]="paper.name">
+            {{paper.name}}
+        </h5>
+        
+        
+        <p class="card-text text-left">
+            {{paper.description}}
+        </p>
+        
+        
+        
+        <div class=" justify-content-start">
+            <a [href]="paper.previewUrl" *ngIf="paper.previewUrl" class="btn btn-dark m-2">
+                <i class="fa-lg mr-1 far fa-eye"></i>
+                Paper
+            </a>
+            
+            <a [href]="paper.sourceUrl" *ngIf="paper.sourceUrl" class="btn btn-dark m-2">
+                <i class="fa-lg mr-1 fab fa-github-alt"></i>
+                Source
+            </a>
+        </div>
+    </div>
+    
+    <div class="card-footer text-muted">
+        Updated: {{paper.date}}
+    </div>
+    
+</div> -->

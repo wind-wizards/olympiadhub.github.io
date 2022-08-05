@@ -1,0 +1,712 @@
+[
+    {
+        "id": 1,
+        "name": "IPHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Physics",
+            "level": "International",
+            "competition": "IPHO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-danger"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["AmpersLaw", "Electromagentism", "StaticCurrents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["AmpersLaw", "Electromagentism", "StaticCurrents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["AmpersLaw", "Electromagentism", "StaticCurrents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": true,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 2,
+        "name": "ICHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Chemistry",
+            "level": "International",
+            "competition": "ICHO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-success"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": true,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 3,
+        "name": "IMO X",
+        "stack": {
+          "categories": {
+            "subject": "Mathematics",
+            "level": "International",
+            "competition": "IMO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-primary"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": true,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 4,
+        "name": "IPHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Physics",
+            "level": "International",
+            "competition": "IPHO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-danger"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": true,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 5,
+        "name": "ICHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Chemistry",
+            "level": "International",
+            "competition": "IChO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-success"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 6,
+        "name": "IMO X",
+        "stack": {
+          "categories": {
+            "subject": "Mathematics",
+            "level": "International",
+            "competition": "IMO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-primary"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 5,
+        "name": "ICHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Chemistry",
+            "level": "International",
+            "competition": "IChO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-success"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 6,
+        "name": "IMO X",
+        "stack": {
+          "categories": {
+            "subject": "Mathematics",
+            "level": "International",
+            "competition": "IMO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-primary"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 5,
+        "name": "ICHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Chemistry",
+            "level": "International",
+            "competition": "IChO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-success"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 6,
+        "name": "IMO X",
+        "stack": {
+          "categories": {
+            "subject": "Mathematics",
+            "level": "International",
+            "competition": "IMO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-primary"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 5,
+        "name": "ICHO XL",
+        "stack": {
+          "categories": {
+            "subject": "Chemistry",
+            "level": "International",
+            "competition": "IChO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-success"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ],
+          "experimental": [
+            {
+              "type": "Experimental",
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "type": "Experimental",
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      },
+    {
+        "id": 6,
+        "name": "IMO X",
+        "stack": {
+          "categories": {
+            "subject": "Mathematics",
+            "level": "International",
+            "competition": "IMO"
+          },
+          "iconClasses": "fab fa-angular",
+          "nameColor": "bg-primary"
+        },
+        "problems": {
+          "theoretical": [
+            {
+              "description": "Problem 1: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 2: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            },
+            {
+              "description": "Problem 3: Rod in magnetics field",
+              "subBranches": ["Ampers Law", "Electromagentism", "Static Currents"],
+              "links": ["problem", "solution"]
+            }
+          ]
+        },
+        "statistics": {
+          "participants": "500",
+          "cuts": {
+            "gold": "🥇 Gold cut: ",
+            "silver": "🥈 Silver cut:",
+            "bronze": "🥉Bronze cut:",
+            "honorable": "🏅 Honorable Mention cut:"
+          },
+          "topCountries": ["China", "Rusia", "Usa", "Japan"]
+        },
+        "information": {
+          "host": "Lithuania",
+          "website": "www.ipho2021.com",
+          "date": "15/12/2019",
+          "commitee": ["Jan kalda", "Ivan Ivanovich"]
+        },
+        "generalDescription": "Lorem Ipsum dolorem martir",
+        "featured": false,
+        "uploaded": "25/11/2020"
+      }
+]
